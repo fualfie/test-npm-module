@@ -4,7 +4,6 @@ test.hello = () => {
     console.log('Hello World')
 }
 
-module.exports = {
-    test:test,
-    my: require('./my')
-}
+exports = module.exports = {};
+exports.test = test
+exports.my = require('./my')
